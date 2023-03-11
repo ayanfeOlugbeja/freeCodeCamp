@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <title>Create Survey Form</title>
+    <link rel="'stylesheet" href="styles.css" />
+  </head>
+    <main>
+      <h1 id='title'>freeCodeCamp Survey Form</h1>
+      <p id='description'>Thank for taking the time to help us improve the platform</p>
+      <form 
+      action="https://register-demo.freecodecamp.org" 
+      method="post" 
+      id='survey-form'>
+
+      <label 
+      id='name-label'
+      for='name'>
+      <p>Name</p> 
+      <input 
+      type="text" 
+      placeholder="Enter your name" 
+      id='name' required />
+      </label>
+
+  <label 
+  id='email-label'
+  for='email'>
+  <p>Email</p> 
+  <input 
+  type="email" 
+  placeholder="Enter your Email" 
+  id='email' 
+  required />
+  </label>
+
+        <label 
+        id='number-label'
+        for='number'>
+        <p>Age(optional)</p> 
+        <input type="number" 
+        placeholder="Age" 
+        min='18' 
+        max='120' 
+        id='number' 
+        required/>
+        </label>
+
+        <label 
+        for='dropdown'>
+        <p>Which option best describes your current role?</p>
+          <select id='dropdown'>
+           <option value="select">(select one)</option>
+            <option value="intern">Intern</option>
+            <option value="senior">Senior Developer</option>
+            <option value="junior">Junior Developer</option>
+            <option value="lead">Team lead</option>
+          </select>
+        </label>
+    
+          <p> Would you recommend freeCodeCamp to a friend?</p>
+        <label for='recommend'>
+         <input 
+         type="radio" 
+         name='recommend'
+         value='definite'
+         />Definitely
+        </label>
+
+        <label for='recommend'>
+          <input 
+          type="radio" 
+          name='recommend'
+          value='maybe'
+          />Maybe
+        </label>
+
+        <label for='recommend'>
+          <input 
+          type="radio" 
+          name='recommend'
+          value='not-sure'/>Not sure
+        </label>
+
+           <label>
+             <p>What is your favourite feature of freeCodeCamp?</p>
+          <select id='feature'>
+           <option value="select">(select one)</option>
+            <option value="news">freeCodeCamp News</option>
+            <option value="youtube">freeCodeCamp YouTube Channel</option>
+            <option value="forum">freeCodeCamp Forum</option>
+            <option value="others">Other</option>
+          </select>
+        </label>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='front-end'>
+          Front-end Projects
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='back-end'>
+          Back-end Projects
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='open-source'>
+          Open Source Community
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='gitter help rooms'>
+          Gitter help rooms
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='videos'>
+          Videos
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='meetups'>
+          City Meetups
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='challenges'>
+          Challenges
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='wiki'>
+          Wiki
+          </label>
+
+        <label>
+          <input 
+          type="checkbox"
+          name='preference'
+          value='additional-courses'>
+          Additional Courses
+          </label>
+
+        <p>Any comments or suggestions?</p>
+        <textarea placeholder="Enter your comment here..."></textarea>
+     <label for='submit'> <input type="submit" value="Submit" id='submit'></label>
+    </main>
+  </form>
+  </body>
+</html>
