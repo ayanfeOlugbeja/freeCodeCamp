@@ -1,0 +1,52 @@
+* {
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Verdana, Tahoma;
+  margin: 0;
+  background: #1a1a1a;
+  color: white;
+}
+h1,
+h2,
+span,
+a {
+  color: yellow;
+}
+#main {
+  margin: 30px 15px;
+  background-color: #262626;
+  border-radius: 10px;
+}
+#title,
+h2,
+header > p {
+  text-align: center;
+}
+header {
+  padding: 20px;
+}
+#img-div {
+  background-color: #1a1a1a;
+  padding: 45px;
+  margin: 10px 10px 20px 10px;
+}
+#image {
+  display: block;
+  height: auto;
+  margin: 15px auto;
+  max-width: 100%;
+}
+
+#timeline,
+#quote {
+  width: 70%;
+  margin: 10px auto;
+}
+footer {
+  font-size: 14px;
+  padding: 10px;
+}
